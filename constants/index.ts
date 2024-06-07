@@ -158,25 +158,24 @@ export const headerData: HeaderDataType[] = [
 
 export const footerLinks = [
   {
-    title: "About",
+    title: "Về chúng tôi",
     links: [
-      { title: "How it works", url: "/" },
-      { title: "Featured", url: "/" },
-      { title: "Partnership", url: "/" },
-      { title: "Bussiness Relation", url: "/" },
+      { title: "Hoat động", url: "/" },
+      { title: "Quan hệ đối tác", url: "/" },
+      { title: "Quan hệ kinh doanh", url: "/" },
     ],
   },
   {
-    title: "Company",
+    title: "Công ty",
     links: [
-      { title: "Events", url: "/" },
+      { title: "Sự kiện", url: "/" },
       { title: "Blog", url: "/" },
-      { title: "Podcast", url: "/" },
-      { title: "Invite a friend", url: "/" },
+      { title: "Tuyển dụng", url: "/" },
+      { title: "Mời thầu", url: "/" },
     ],
   },
   {
-    title: "Socials",
+    title: "Mạng xã hội",
     links: [
       { title: "Discord", url: "/" },
       { title: "Instagram", url: "/" },
