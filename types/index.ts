@@ -1,5 +1,19 @@
 import { MouseEventHandler } from "react";
 
+
+export interface HeaderDataType {
+  id:number,
+  content:string,
+  isHover:boolean,
+  subNav?:{
+      idSub:string,
+      content:string,
+      detail?:{
+          idDetail:string,
+          content:string
+      }[]
+  }[]
+}
 export interface CarProps {
   city_mpg: number;
   class: string;

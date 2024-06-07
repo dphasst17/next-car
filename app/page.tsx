@@ -1,6 +1,6 @@
 import { fetchCars } from "@utils";
 import { HomeProps } from "@types";
-import { fuels, yearsOfProduction } from "@constants";
+import { yearsOfProduction } from "@constants";
 import { CarCard, ShowMore, SearchBar, CustomFilter, Hero } from "@components";
 
 export default async function Home({ searchParams }: HomeProps) {
@@ -20,15 +20,14 @@ export default async function Home({ searchParams }: HomeProps) {
 
       <div className='mt-12 padding-x padding-y max-width' id='discover'>
         <div className='home__text-container'>
-          <h1 className='text-4xl font-extrabold'>Car Catalogue</h1>
-          <p>Explore out cars you might like</p>
+          <h1 className='text-4xl font-extrabold'>Danh mục ô tô</h1>
+          <p>Khám phá những chiếc xe bạn có thể thích</p>
         </div>
 
         <div className='home__filters'>
           <SearchBar />
 
           <div className='home__filter-container'>
-            <CustomFilter title='fuel' options={fuels} />
             <CustomFilter title='year' options={yearsOfProduction} />
           </div>
         </div>

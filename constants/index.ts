@@ -1,3 +1,5 @@
+import { HeaderDataType } from "@types";
+
 export const manufacturers = [
   "Acura",
   "Alfa Romeo",
@@ -55,7 +57,7 @@ export const yearsOfProduction = [
   { title: "2023", value: "2023" },
 ];
 
-export const fuels = [
+/* export const fuels = [
   {
     title: "Fuel",
     value: "",
@@ -68,7 +70,91 @@ export const fuels = [
     title: "Electricity",
     value: "Electricity",
   },
-];
+]; */
+
+export const headerData: HeaderDataType[] = [
+  {
+    id: 1,
+    content: "Trang chủ",
+    isHover: false,
+  },
+  {
+    id: 2,
+    content: "Giới thiệu",
+    isHover: true,
+    subNav: [
+      {
+        idSub: "sub-2-1",
+        content: "Tổng quan",
+      }
+    ]
+  },
+  {
+    id: 3,
+    content: "Quan hệ cổ đông",
+    isHover: true,
+    subNav: [
+      {
+        idSub: "sub-3-1",
+        content: "Tin tức",
+      },
+      {
+        idSub: "sub-3-2",
+        content: "Điều lệ và Quy chế công ty",
+        detail: [
+          {
+            idDetail: "sub-3-2-1",
+            content: "Điều lệ",
+          },
+          {
+            idDetail: "sub-3-2-2",
+            content: "Quy chế",
+          }
+        ]
+      },
+      {
+        idSub: "sub-3-3",
+        content: "Báo cáo tài chính",
+      },
+      {
+        idSub: "sub-3-4",
+        content: "Báo cáo thường niên",
+      },
+      {
+        idSub: "sub-3-5",
+        content: "Báo cáo tình hình quản trị công ty",
+      },
+      {
+        idSub: "sub-3-6",
+        content: "Tài liệu đại hội cổ đông",
+      },
+      {
+        idSub: "sub-3-7",
+        content: "Nghị quyết, Quyết định đại hội cổ đông",
+      },
+      {
+        idSub: "sub-3-8",
+        content: "Nghị Quyết, Quyết định Hội đồng quản trị",
+      }
+      
+    ]
+  },
+  {
+    id: 4,
+    content: "Tuyển dụng",
+    isHover: false
+  },
+  {
+    id: 5,
+    content: "Mời thầu",
+    isHover: false
+  },
+  {
+    id: 6,
+    content: "Liên hệ",
+    isHover: false,
+  }
+]
 
 export const footerLinks = [
   {
